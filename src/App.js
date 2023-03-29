@@ -9,7 +9,7 @@ const App = () => {
     // JSX
     <div className="App">
       <MyNav className="position-fixed"></MyNav>
-      <div class="mt-4 p-5 bg-secondary text-white rounded">
+      <div className="mt-4 p-5 bg-secondary text-white rounded">
         <h1>I nostri libri</h1>
         <p>Ecco cosa abbiamo per te:</p>
       </div>

@@ -14,13 +14,13 @@ class MyHome extends Component {
                 <Row className="d-flex justify-content-center mt-3">
                         {books.map((book) => {
                             return (
-                                <Col className="p-3" xs={12} md={8} lg={3}>
+                                <Col key={book.asin} className="p-3" xs={12} md={8} lg={3}>
                                 <Card style={{ width: '18rem' }}>
                                     <Card.Img variant="top" src={book.img}/>
                                     <Card.Body>
                                         <Card.Title>{book.title}</Card.Title>
                                         <Card.Text>
-                                            {book.price}
+                                            ${book.price}
                                         </Card.Text>
                                         <Button variant="primary">Aggiungi</Button>
                                     </Card.Body>
