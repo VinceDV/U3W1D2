@@ -1,27 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 // installare bootstrap e react-bootstrap non lo rende automaticamente disponibile
 import 'bootstrap/dist/css/bootstrap.min.css'
-// questo rende disponibile il file CSS di bootstrap a tutto il mio progetto
-
+import MyNav from './components/MyNav';
+import MyFooter from './components/MyFooter';
+import MyHome from './components/MyHome';
 const App = () => {
   return (
     // JSX
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='text-dark'>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyNav className="position-fixed"></MyNav>
+      <div class="mt-4 p-5 bg-secondary text-white rounded">
+        <h1>I nostri libri</h1>
+        <p>Ecco cosa abbiamo per te:</p>
+      </div>
+      <div className='d-flex'>
+        <MyHome/>
+      </div>
+      <div>
+        <MyFooter/>
+      </div>
     </div>
   );
 }
