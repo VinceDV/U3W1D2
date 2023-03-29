@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+// installare bootstrap e react-bootstrap non lo rende automaticamente disponibile
+import 'bootstrap/dist/css/bootstrap.min.css'
+// questo rende disponibile il file CSS di bootstrap a tutto il mio progetto
 
-function App() {
+const App = () => {
   return (
+    // JSX
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p className='text-dark'>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
