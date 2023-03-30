@@ -5,8 +5,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 import books from '../data/fantasy.json'
-
-
 class MyHome extends Component {
     render() {
         return (

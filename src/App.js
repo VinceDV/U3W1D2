@@ -3,7 +3,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNav from './components/MyNav';
 import MyFooter from './components/MyFooter';
-import MyHome from './components/MyHome';
+// import MyHome from './components/MyHome';
+import SingleBook from './components/SingleBook';
+import BookList from './components/BookList';
+
 const App = () => {
   return (
     // JSX
@@ -14,7 +17,7 @@ const App = () => {
         <p>Ecco cosa abbiamo per te:</p>
       </div>
       <div className='d-flex'>
-        <MyHome/>
+        <BookList/>
       </div>
       <div>
         <MyFooter/>
