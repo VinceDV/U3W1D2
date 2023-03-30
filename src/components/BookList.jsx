@@ -8,11 +8,6 @@ import Form from "react-bootstrap/esm/Form";
 class BookList extends Component {
     state = {
         query: "",
-        selected: false
-    }
-    handleCardClick = () => {
-        this.setState({selected: !this.state.selected});
-        console.log('cliccato')
     }
     filterBookList() {
         return (
@@ -41,7 +36,7 @@ class BookList extends Component {
         <Row className="d-flex justify-content-center mt-3">
                 {this.filterBookList().map((book) => {
                     return (
-                        <SingleBook className={cardClassName} title={book.title} key={book.asin} img={book.img} price={book.price} onClick={this.handleCardClick}/>
+                        <SingleBook className={cardClassName} title={book.title} key={book.asin} img={book.img} price={book.price}/>
                     )
                 })}
         </Row>
