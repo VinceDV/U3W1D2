@@ -4,9 +4,6 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 class SingleBook extends Component {
-    state = {
-        selected: false
-    }
   render() {
     return (
           <Col key={this.props.asin} className="p-3" xs={12} md={8} lg={3}>

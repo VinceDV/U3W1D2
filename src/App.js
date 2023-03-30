@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNav from './components/MyNav';
 import MyFooter from './components/MyFooter';
 // import MyHome from './components/MyHome';
-import SingleBook from './components/SingleBook';
 import BookList from './components/BookList';
 
 const App = () => {
